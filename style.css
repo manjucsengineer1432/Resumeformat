@@ -1,33 +1,130 @@
-@page { size: A4; margin: 0; }
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; background: #ddd; }
-body { font-family: Georgia, 'Times New Roman', serif; color: #1d2633; font-size: 10.3pt; line-height: 1.35; }
-.resume { width: 210mm; margin: 10mm auto; }
-.page { width: 210mm; min-height: 297mm; background: white; }
-.topbar { height: 25mm; background: #303030; color: white; text-align: center; padding-top: 5mm; }
-.topbar h1 { margin: 0 0 3mm; font-size: 21pt; font-weight: 500; letter-spacing: .5px; }
-.topbar div { font-size: 9.5pt; }
-.grid { display: grid; grid-template-columns: 65% 35%; }
-.main-col { padding: 6mm 5mm 6mm 4.5mm; }
-.side-col { background: #f7f7f7; padding: 5mm 5mm 6mm 4.5mm; }
-section { margin: 0 0 5.2mm; }
-h2 { font-size: 14pt; color: #3d3d3d; margin: 0 0 3.2mm; padding-bottom: 2.3mm; border-bottom: 1.1px solid #687a91; font-weight: 700; }
-.main-col section:first-child h2 { border-bottom: 0; padding-bottom: 0; }
-p { margin: 0 0 2.3mm; }
-h3 { font-size: 10.7pt; margin: 0 0 1mm; line-height: 1.3; color: #111; }
-.item { margin-bottom: 4.2mm; }
-.item > strong { font-size: 9.3pt; color: #111; }
-ul { margin: 1.5mm 0 0 4.5mm; padding-left: 0; }
-li { margin: 0 0 1.35mm; padding-left: 1mm; }
-.profile { width: 41mm; height: 41mm; object-fit: cover; border-radius: 50%; display: block; margin: -4mm auto 5mm; border: 4px solid white; box-shadow: 0 1px 9px rgba(0,0,0,.28); }
-.side-col h2 { border-bottom: 0; padding-bottom: 0; }
-.contact p { margin-bottom: 3mm; white-space: nowrap; font-size: 9.2pt; }
-.skills { margin-left: 4.5mm; }
-.skills li { margin-bottom: 2.2mm; }
-.page-two .main-col { padding-top: 5mm; }
-.page-two .side-col { padding-top: 4.5mm; }
-.page-two .main-col > .item:first-child { margin-bottom: 4mm; }
-.second-side section:first-child { margin-bottom: 9mm; }
+@page { 
+  size: A4; 
+  margin: 0; 
+}
+* { 
+  box-sizing: border-box;
+ }
+html, body { margin: 0;
+   padding: 0; 
+   background: #ddd;
+   }
+body {
+   font-family: Georgia, 'Times New Roman', serif; 
+   color: #1d2633; 
+   font-size: 10.3pt;
+    line-height: 1.35; }
+.resume {
+   width: 210mm;
+    margin: 10mm auto; 
+  }
+.page { 
+  width: 210mm;
+   min-height: 297mm;
+    background: white; 
+}
+.topbar {
+   height: 25mm;
+    background: #303030;
+     color: white; 
+     text-align: center; 
+     padding-top: 5mm; 
+    }
+.topbar h1 
+{ 
+   margin: 0 0 3mm;
+   font-size: 21pt; 
+   font-weight: 500; 
+   letter-spacing: .5px; 
+  }
+.topbar div {
+   font-size: 9.5pt;
+   }
+.grid {
+   display: grid;
+    grid-template-columns: 65% 35%; 
+  }
+.main-col { 
+  padding: 6mm 5mm 6mm 4.5mm; 
+}
+.side-col {
+   background: #f7f7f7;
+    padding: 5mm 5mm 6mm 4.5mm;
+   }
+section { 
+  margin: 0 0 5.2mm; 
+}
+h2 {
+   font-size: 14pt; 
+   color: #3d3d3d;
+    margin: 0 0 3.2mm; 
+    padding-bottom: 2.3mm; 
+    border-bottom: 1.1px solid #687a91; 
+    font-weight: 700;
+   }
+.main-col section:first-child h2 { 
+  border-bottom: 0;
+   padding-bottom: 0;
+   }
+p { margin: 0 0 2.3mm;
+ }
+h3 { font-size: 10.7pt;
+   margin: 0 0 1mm; 
+   line-height: 1.3;
+    color: #111; 
+  }
+.item { 
+  margin-bottom: 4.2mm;
+ }
+.item > strong { 
+  font-size: 9.3pt; 
+  color: #111;
+ }
+ul { 
+  margin: 1.5mm 0 0 4.5mm; 
+  padding-left: 0;
+ }
+li { 
+  margin: 0 0 1.35mm; 
+  padding-left: 1mm; 
+}
+.profile { 
+  width: 41mm; 
+  height: 41mm; 
+  object-fit: cover; 
+  border-radius: 50%; 
+  display: block;
+   margin: -4mm auto 5mm; 
+   border: 4px solid white; 
+   box-shadow: 0 1px 9px rgba(0,0,0,.28);
+   }
+.side-col h2 {
+   border-bottom: 0;
+    padding-bottom: 0;
+   }
+.contact p { 
+  margin-bottom: 3mm; 
+  white-space: nowrap;
+   font-size: 9.2pt; 
+  }
+.skills { 
+  margin-left: 4.5mm; 
+}
+.skills li { 
+  margin-bottom: 2.2mm;
+ }
+.page-two .main-col { 
+  padding-top: 5mm; 
+}
+.page-two .side-col { 
+  padding-top: 4.5mm; 
+}
+.page-two .main-col > .item:first-child { 
+  margin-bottom: 4mm;
+ }
+.second-side section:first-child {
+   margin-bottom: 9mm; 
+  }
 @media screen and (max-width: 900px) {
   html, body { background: #fff; }
   .resume { width: 100%; margin: 0; }
